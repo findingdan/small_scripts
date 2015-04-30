@@ -1,0 +1,65 @@
+TFile file("15791_1.10kb.root","read");
+TDirectory *dir = (TDirectory*) file.Get("bin_10000"); 
+ofstream myFile("bins_10kb_of_gc_corrected_rd.txt");
+TH1 * his = (TH1F*)dir->Get("his_rd_p_chr1_10000_GC")
+for (int i = 1;i <= his->GetNbinsX();i++) { myFile<<1<< " " << his->GetBinCenter(i)-his->GetBinWidth(1)/2<<" "<<his->GetBinCenter(i)+his->GetBinWidth(1)/2<<" "   <<" "<<his->GetBinContent(i)<<endl; }
+TH1 * his2 = (TH1F*)dir->Get("his_rd_p_chr2_10000_GC")
+for (int i = 1;i <= his2->GetNbinsX();i++) { myFile<<2<< " " << his2->GetBinCenter(i)-his2->GetBinWidth(1)/2<<" "<<his2->GetBinCenter(i)+his2->GetBinWidth(1)/2<<" "   <<" "<<his2->GetBinContent(i)<<endl; }
+TH1 * his3 = (TH1F*)dir->Get("his_rd_p_chr3_10000_GC")
+for (int i = 1;i <= his3->GetNbinsX();i++) { myFile<<3<< " " << his3->GetBinCenter(i)-his3->GetBinWidth(1)/2<<" "<<his3->GetBinCenter(i)+his3->GetBinWidth(1)/2<<" "   <<" "<<his3->GetBinContent(i)<<endl; }
+TH1 * his4 = (TH1F*)dir->Get("his_rd_p_chr4_10000_GC")
+for (int i = 1;i <= his4->GetNbinsX();i++) { myFile<<4<< " " << his4->GetBinCenter(i)-his4->GetBinWidth(1)/2<<" "<<his4->GetBinCenter(i)+his4->GetBinWidth(1)/2<<" "   <<" "<<his4->GetBinContent(i)<<endl; }
+TH1 * his5 = (TH1F*)dir->Get("his_rd_p_chr5_10000_GC")
+for (int i = 1;i <= his5->GetNbinsX();i++) { myFile<<5<< " " << his5->GetBinCenter(i)-his5->GetBinWidth(1)/2<<" "<<his5->GetBinCenter(i)+his5->GetBinWidth(1)/2<<" "   <<" "<<his5->GetBinContent(i)<<endl; }
+TH1 * his6 = (TH1F*)dir->Get("his_rd_p_chr6_10000_GC")
+for (int i = 1;i <= his6->GetNbinsX();i++) { myFile<<6<< " " << his6->GetBinCenter(i)-his6->GetBinWidth(1)/2<<" "<<his6->GetBinCenter(i)+his6->GetBinWidth(1)/2<<" "   <<" "<<his6->GetBinContent(i)<<endl; }
+TH1 * his7 = (TH1F*)dir->Get("his_rd_p_chr7_10000_GC")
+for (int i = 1;i <= his7->GetNbinsX();i++) { myFile<<7<< " " << his7->GetBinCenter(i)-his7->GetBinWidth(1)/2<<" "<<his7->GetBinCenter(i)+his7->GetBinWidth(1)/2<<" "   <<" "<<his7->GetBinContent(i)<<endl; }
+TH1 * his8 = (TH1F*)dir->Get("his_rd_p_chr8_10000_GC")
+for (int i = 1;i <= his8->GetNbinsX();i++) { myFile<<8<< " " << his8->GetBinCenter(i)-his8->GetBinWidth(1)/2<<" "<<his8->GetBinCenter(i)+his8->GetBinWidth(1)/2<<" "   <<" "<<his8->GetBinContent(i)<<endl; }
+TH1 * his9 = (TH1F*)dir->Get("his_rd_p_chr9_10000_GC")
+for (int i = 1;i <= his9->GetNbinsX();i++) { myFile<<9<< " " << his9->GetBinCenter(i)-his9->GetBinWidth(1)/2<<" "<<his9->GetBinCenter(i)+his9->GetBinWidth(1)/2<<" "   <<" "<<his9->GetBinContent(i)<<endl; }
+TH1 * his10 = (TH1F*)dir->Get("his_rd_p_chr10_10000_GC")
+for (int i = 1;i <= his10->GetNbinsX();i++) { myFile<<10<< " " << his10->GetBinCenter(i)-his10->GetBinWidth(1)/2<<" "<<his10->GetBinCenter(i)+his10->GetBinWidth(1)/2<<" "   <<" "<<his10->GetBinContent(i)<<endl; }
+TH1 * his11 = (TH1F*)dir->Get("his_rd_p_chr11_10000_GC")
+for (int i = 1;i <= his11->GetNbinsX();i++) { myFile<<11<< " " << his11->GetBinCenter(i)-his11->GetBinWidth(1)/2<<" "<<his11->GetBinCenter(i)+his11->GetBinWidth(1)/2<<" "   <<" "<<his11->GetBinContent(i)<<endl; }
+TH1 * his12 = (TH1F*)dir->Get("his_rd_p_chr12_10000_GC")
+for (int i = 1;i <= his12->GetNbinsX();i++) { myFile<<12<< " " << his12->GetBinCenter(i)-his12->GetBinWidth(1)/2<<" "<<his12->GetBinCenter(i)+his12->GetBinWidth(1)/2<<" "   <<" "<<his12->GetBinContent(i)<<endl; }
+TH1 * his13 = (TH1F*)dir->Get("his_rd_p_chr13_10000_GC")
+for (int i = 1;i <= his13->GetNbinsX();i++) { myFile<<13<< " " << his13->GetBinCenter(i)-his13->GetBinWidth(1)/2<<" "<<his13->GetBinCenter(i)+his13->GetBinWidth(1)/2<<" "   <<" "<<his13->GetBinContent(i)<<endl; }
+TH1 * his14 = (TH1F*)dir->Get("his_rd_p_chr14_10000_GC")
+for (int i = 1;i <= his14->GetNbinsX();i++) { myFile<<14<< " " << his14->GetBinCenter(i)-his14->GetBinWidth(1)/2<<" "<<his14->GetBinCenter(i)+his14->GetBinWidth(1)/2<<" "   <<" "<<his14->GetBinContent(i)<<endl; }
+TH1 * his15 = (TH1F*)dir->Get("his_rd_p_chr15_10000_GC")
+for (int i = 1;i <= his15->GetNbinsX();i++) { myFile<<15<< " " << his15->GetBinCenter(i)-his15->GetBinWidth(1)/2<<" "<<his15->GetBinCenter(i)+his15->GetBinWidth(1)/2<<" "   <<" "<<his15->GetBinContent(i)<<endl; }
+TH1 * his16 = (TH1F*)dir->Get("his_rd_p_chr16_10000_GC")
+for (int i = 1;i <= his16->GetNbinsX();i++) { myFile<<16<< " " << his16->GetBinCenter(i)-his16->GetBinWidth(1)/2<<" "<<his16->GetBinCenter(i)+his16->GetBinWidth(1)/2<<" "   <<" "<<his16->GetBinContent(i)<<endl; }
+TH1 * his17 = (TH1F*)dir->Get("his_rd_p_chr17_10000_GC")
+for (int i = 1;i <= his17->GetNbinsX();i++) { myFile<<17<< " " << his17->GetBinCenter(i)-his17->GetBinWidth(1)/2<<" "<<his17->GetBinCenter(i)+his17->GetBinWidth(1)/2<<" "   <<" "<<his17->GetBinContent(i)<<endl; }
+TH1 * his18 = (TH1F*)dir->Get("his_rd_p_chr18_10000_GC")
+for (int i = 1;i <= his18->GetNbinsX();i++) { myFile<<18<< " " << his18->GetBinCenter(i)-his18->GetBinWidth(1)/2<<" "<<his18->GetBinCenter(i)+his18->GetBinWidth(1)/2<<" "   <<" "<<his18->GetBinContent(i)<<endl; }
+TH1 * his19 = (TH1F*)dir->Get("his_rd_p_chr19_10000_GC")
+for (int i = 1;i <= his19->GetNbinsX();i++) { myFile<<19<< " " << his19->GetBinCenter(i)-his19->GetBinWidth(1)/2<<" "<<his19->GetBinCenter(i)+his19->GetBinWidth(1)/2<<" "   <<" "<<his19->GetBinContent(i)<<endl; }
+TH1 * his20 = (TH1F*)dir->Get("his_rd_p_chr20_10000_GC")
+for (int i = 1;i <= his20->GetNbinsX();i++) { myFile<<20<< " " << his20->GetBinCenter(i)-his20->GetBinWidth(1)/2<<" "<<his20->GetBinCenter(i)+his20->GetBinWidth(1)/2<<" "   <<" "<<his20->GetBinContent(i)<<endl; }
+TH1 * his21 = (TH1F*)dir->Get("his_rd_p_chr21_10000_GC")
+for (int i = 1;i <= his21->GetNbinsX();i++) { myFile<<21<< " " << his21->GetBinCenter(i)-his21->GetBinWidth(1)/2<<" "<<his21->GetBinCenter(i)+his21->GetBinWidth(1)/2<<" "   <<" "<<his21->GetBinContent(i)<<endl; }
+TH1 * his22 = (TH1F*)dir->Get("his_rd_p_chr22_10000_GC")
+for (int i = 1;i <= his22->GetNbinsX();i++) { myFile<<22<< " " << his22->GetBinCenter(i)-his22->GetBinWidth(1)/2<<" "<<his22->GetBinCenter(i)+his22->GetBinWidth(1)/2<<" "   <<" "<<his22->GetBinContent(i)<<endl; }
+myFile.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
